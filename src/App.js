@@ -9,9 +9,11 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="app-header"></div>
         <div className="span">
           <div className="app-nav">
+            <div className="header">
+              <h2>OGS</h2>
+            </div>
             <ul>
               <li><a href="/">Home</a></li>
               <li><a href="/Library">Game Library</a></li>
