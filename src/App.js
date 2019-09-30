@@ -1,18 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import { Route } from "react-router-dom";
+import NotFound from "./components/NotFound";
+import Home from "./components/Home";
+import Library from "./components/Library";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to Open Game Studios (OGS). We are a small game studio powered and driven by a community of developers and gamers.
-        </p>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <div className="app-header"></div>
+        <div className="span">
+          <div className="app-nav">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/Library">Game Library</a></li>
+            </ul>
+          </div>
+          <div className="app-content">
+            <Route exact path="/" component={Home} />
+            <Route path="/Library" component={Library} />
+          </div>
+        </div>
+      </div>
+    );
+  };
 }
 
 export default App;
