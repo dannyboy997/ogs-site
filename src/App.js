@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Route } from "react-router-dom";
-import NotFound from "./components/NotFound";
 import Home from "./components/Home";
 import Library from "./components/Library";
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="app-page">
         <div className="span">
           <div className="app-nav">
             <div className="header">
