@@ -23,6 +23,9 @@ class App extends Component {
             <Route path="/Library" component={Library} />
           </div>
         </div>
+        <div class="app-footer">
+          Footer
+        </div>
       </div>
     );
   };
