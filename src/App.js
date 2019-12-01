@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import Library from "./components/Library";
 
@@ -19,8 +19,10 @@ class App extends Component {
             </ul>
           </div>
           <div className="app-content">
-            <Route exact path="/" component={Home} />
-            <Route path="/Library" component={Library} />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/Library" component={Library} />
+            </Switch>
           </div>
         </div>
         <div class="app-footer">
