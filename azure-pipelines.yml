@@ -20,6 +20,12 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/src'
+    Contents: 'web.config'
+    TargetFolder: '$(Build.SourcesDirectory)/build'
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.SourcesDirectory)/build'

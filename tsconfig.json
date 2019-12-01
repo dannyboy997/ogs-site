@@ -20,9 +20,6 @@
     "jsx": "react"
   },
   "include": [
-    "src"
-  ],
-  "resources": [
-    "src/web.config"
+    "src/**/*"
   ]
 }
