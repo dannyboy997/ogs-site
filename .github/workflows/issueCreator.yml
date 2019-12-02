@@ -16,3 +16,10 @@ jobs:
     steps:
     - name: Git Issue Creation
       uses: bryan-nice/git-issue-creation@1.1.1
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_COMMIT_SHA: ${{ github.sha }}
+          GITHUB_REPO_OWNER: 'dannyboy997'
+          GITHUB_REPO_NAME: 'ogs-site'
+          GITHUB_ISSUE_TITLE: 'Vote - PR ...'
+          GITHUB_ISSUE_BODY: 'Vote by thumbs up or down on this issue'
