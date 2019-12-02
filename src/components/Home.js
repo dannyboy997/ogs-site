@@ -25,6 +25,11 @@ class Home extends Component {
                             <li>First Game - Snowflake - <a href="https://github.com/dannyboy997/ogs_game_snowflake">GitHub</a></li>
                         </ul>
                     </p>
+                    <h3>Connect</h3>
+                    <p>
+                        Interesting in joining the team to help or just see whats happening? Click <a href="https://teams.microsoft.com/join/9m4xu03tea53">here</a> to join.
+                    </p>
+                    
                 </div>
             </div>
         );
