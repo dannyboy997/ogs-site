@@ -21,11 +21,11 @@ class MemberLevels extends Component {
                     </p>
                     <h2>Contributors</h2>
                     <p>
-                        
+                        These members have active contributions.
                     </p>
                     <h2>Insiders</h2>
                     <p>
-                        
+                        These member get to see everything, comment and vote on issues.
                     </p>
                 </div>
             </div>
