@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Library from "./components/Library";
 import MemberLevels from "./components/MemberLevels";
 import { PlayFab, PlayFabClient } from "playfab-sdk";
+import CookieHelper from './CookieHelper';
 
 class App extends Component {
   render() {
@@ -39,12 +40,20 @@ class App extends Component {
   };
 
   private doExampleLoginWithCustomID(): void {
+    let cookieName = "OGSUser";
+
+    var userId = CookieHelper.getCookie(cookieName);
+
+    if(userId === null || userId === "" || userId === undefined) {
+      userId = Math.random().toString();
+      CookieHelper.setCookie(cookieName, userId);
+    }
     PlayFab.settings.titleId = "14DBF";
     var loginRequest = {
       // Currently, you need to look up the correct format for this object in the API-docs:
       // https://api.playfab.com/documentation/Client/method/LoginWithCustomID
       TitleId: PlayFab.settings.titleId,
-      CustomId: Math.random(),
+      CustomId: userId,
       CreateAccount: true
     };
 
