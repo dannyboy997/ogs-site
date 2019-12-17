@@ -4,10 +4,10 @@ class Library extends Component {
     render() {
         return (
             <div>
-                <div class="page-header">
+                <div className="page-header">
                     Library
                 </div>
-                <div class="page-content">
+                <div className="page-content">
                     Nothing here yet
                 </div>
             </div>

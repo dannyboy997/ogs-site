@@ -4,10 +4,10 @@ class MemberLevels extends Component {
     render() {
         return (
             <div>
-                <div class="page-header">
+                <div className="page-header">
                     Member Levels
                 </div>
-                <div class="page-content">
+                <div className="page-content">
                     <h2>Board</h2>
                     <p>
                         These member are entrusted with direction and ensuring the communities needs are being fulfilled.

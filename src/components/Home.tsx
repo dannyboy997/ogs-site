@@ -4,10 +4,10 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <div class="page-header">
+                <div className="page-header">
                     Home
                 </div>
-                <div class="page-content">
+                <div className="page-content">
                     <p>
                         Welcome to Open Game Studios (OGS). We are a small game studio powered and driven by a community of developers and gamers.
                     </p>

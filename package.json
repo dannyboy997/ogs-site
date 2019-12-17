@@ -7,6 +7,7 @@
     "@types/react": "^16.9.3",
     "@types/react-dom": "^16.9.1",
     "@types/react-router-dom": "^5.1.0",
+    "playfab-sdk": "^2.39.191121",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router": "^5.1.1",
@@ -14,7 +15,7 @@
     "react-router-dom": "^5.1.1",
     "react-scripts": "3.1.2",
     "three": "^0.108.0",
-    "typescript": "^3.6.3"
+    "typescript": "^3.7.3"
   },
   "scripts": {
     "start": "react-scripts start",
